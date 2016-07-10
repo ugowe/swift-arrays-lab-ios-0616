@@ -14,7 +14,7 @@
 // write your code here
 
 
-
+let list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -24,7 +24,7 @@
 // write your code here
 
 
-
+var shoppingList : [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 /*: question3
@@ -33,7 +33,8 @@
 // write your code here
 
 
-
+var futureShoppingList : [String]
+futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -44,7 +45,7 @@
 
 
 
-
+let cheeseSandwich : [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 /*: question5
@@ -53,8 +54,7 @@
 // write your code here
 
 
-
-
+let desertList : [String] = ["Cookie dough", "Ice Cream"]
 
 
 
@@ -65,7 +65,7 @@
 
 
 
-
+let afternoonAttendance : [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -77,7 +77,7 @@
 
 
 
-
+var itemToPrint = shoppingList[1]
 
 
 
@@ -89,9 +89,8 @@
 
 
 
-
-
-
+futureShoppingList[2] = "Chicken"
+print(futureShoppingList)
 
 
 /*: question9
@@ -100,8 +99,16 @@
 // write your code here
 
 
+func lifesEssential(ingredients: [String]) -> Bool {
+    if (ingredients[0] == "Bread") {
+        return true
+    } else {
+        return false
+    }
+}
 
-
+lifesEssential(cheeseSandwich)
+lifesEssential(shoppingList)
 
 
 /*: question10
@@ -110,6 +117,7 @@
 // write your code here
 
 
+print(lifesEssential(shoppingList))
 
 
 
@@ -122,7 +130,6 @@
 // write your code here
 
 
-
-
+print(lifesEssential(desertList))
 
 //: On solution branch, there should be a link here to the solution file.
